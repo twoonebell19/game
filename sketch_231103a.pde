@@ -1,7 +1,7 @@
 frog [] aa;
 ghost [] yy;
 void setup() {
-  size(800, 600);
+  size(1200, 800);
   aa = new frog[3];
   yy = new ghost[5];
   for (int i=0; i<3; i++) aa[i] = new frog();
@@ -33,8 +33,8 @@ void mousePressed() { // sprint 2
   aa[2].y = mouseY;
 }
 void keyPressed() {   // sprint 2
-  if (key == 'a') yy[4].x -= 5;
-  else if (key == 'd') yy[4].x += 5;
-  else if (key == 's') yy[4].y += 5;
-  else if (key == 'w') yy[4].y -= 5;
+  if (key == 'a') yy[4].x -= 15;
+  else if (key == 'd') yy[4].x += 15;
+  else if (key == 's') yy[4].y += 15;
+  else if (key == 'w') yy[4].y -= 15;
 }
